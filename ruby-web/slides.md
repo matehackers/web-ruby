@@ -185,11 +185,54 @@ Alguns exemplos
 * +: <http://colly.com/>
 
 
-Javascript
+JavaScript (JS)
 =
 
-* Interação local
-* Mostrar exemplos
+Torna seu aplicativo interativo
+
+Exemplos:
+* Validações (no cliente)
+* Drag and drop
+* Menus
+
+JS
+=
+
+É uma linguagem de programação dinâmica e fracamente tipada.
+
+**JavaScript não é Java**.
+
+JS
+=
+
+Como interage com a página?
+
+DOM (Documento Object Model)
+* Uma arvore de objetos que reflete a estrutura do html.
+* Objetos possuem propriedades e métodos que permitem alterar o html.
+
+Exemplos:
+* document.getElementById('about');
+* document.getElementByTagName('p');
+
+JQuery
+=
+
+Biblioteca JavaScript para facilitar:
+* Percorer DOM
+* Lidar com eventos
+* Animações
+* Ajax
+
+<http://jquery.com/>
+
+JS Tutoriais
+=
+
+<http://www.codecademy.com/#!/exercises/0>
+<http://www.codeschool.com/>
+<http://jstherightway.com/>
+<https://developer.mozilla.org/en-US/docs/JavaScript/Guide>
 
 Conteúdo Din, Estat
 =
