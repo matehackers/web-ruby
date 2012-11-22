@@ -4,11 +4,19 @@
 Jabá e Matehackers
 =
 
+\centerline{\includegraphics[height=1.3in]{assets/images/logo.png}}
+
+#### Hackers + Espaço = Hackerspace
+
+<matehackers.org>
 
 What is Web?
 =
 
-* Figura bala da browser, nuvem e server
+* Uma nuvemzinha (não confundir com cloud computing)
+
+\centerline{\includegraphics[height=1.5in]{assets/images/web.png}}
+\label{Arquiterura da Web. Retirado de udacity.com}
 
 <div class="notes">
 
@@ -294,6 +302,8 @@ Biblioteca JavaScript para facilitar:
 
 <http://jquery.com/>
 
+<http://www.codeschool.com/courses/jquery-air-first-flight>
+
 Tutoriais JS
 =
 
@@ -312,19 +322,37 @@ Conteúdo Din, Estat
 Linguagens de Programação
 =
 
-Arquitetura do processo
+O caminho de uma requisição Web
 =
 
-* LAMP, OSDL
+## O que acontece quando acessamos http://meusite.com/segredo.html usando nosso browser?
 
-Rails, Ruby, Sinatra...
+O caminho de uma requisição Web
+=
+
+* Mensagem no protocolo HTTP para 1.2.3.4 na porta 80
+* Requisição DNS para o IP de meusite.com (digamos que seja 1.2.3.4)
+* A request HTTP é essa:
+
+    GET meusite.com HTTP/1.1
+
+O caminho de uma requisição Web
+=
+
+* Mensagem é recebida pelo servidor
+* Servidor extrai o significado
+
+Ruby e Rails
 =
 
 * tryruby
 * RailsForZombies
 
-Dissecar os requests
+Dissecando nossos requests
 =
+
+## Qual o caminho de um request dentro do Rails?
+* Sistema de rotas
 
 Onde ficam os arquivos
 =
