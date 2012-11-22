@@ -120,6 +120,7 @@ What is the deal? Semantics!
 O que havia antes? Um monte de `<div id="blablabla">`
 
 Alguns exemplos:
+
 * `<header>` grupo auxiliar introdutorio, podendo ser reutilizado dentro de outras tags;
 
 * `<nav>` seção da página com links para outras páginas do site ou seções na mesma página;
@@ -200,6 +201,7 @@ CSS3
 =
 
 Alguns exemplos
+
 * Tipografia: <http://samuraiplayground.appspot.com/tipografia>
 
 * Transformações: <http://www.keithclark.co.uk/labs/3dcss/demo/>
