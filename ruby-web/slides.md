@@ -94,7 +94,9 @@ Escreva HTML antes -> pense na estrutura dos dados.
 
 Só depois comece a pensar na apresentação.
 
-Ex.: headers, use `<h1>`, `<h2>`, `<h3>`, sem se preocupar com o tamanho da fonte, mas sim com seu significado (seções e subseções). A aparência pode ser mudada depois com CSS.
+Ex.: headers, use `<h1>`, `<h2>`, `<h3>`, ..., sem se preocupar com o tamanho da fonte, mas sim com seu significado (seções e subseções).
+
+A aparência pode ser mudada depois com CSS.
 
 HTML
 =
@@ -113,10 +115,6 @@ Qual a diferença entre `<em>` e `<i>`? `<strong>` e `<b>`?
 HTML
 =
 
-Bom material para aprender do zero a 99%
-
-<http://htmldog.com>
-
 HTML bem escrito significa:
 
 * Acessibilidade (Screen Readers)
@@ -126,6 +124,13 @@ HTML bem escrito significa:
 * Fácil manutenção (Fácil de entender e alterar)
 
 * Menor latência (cache de arquivos css e js)
+
+HTML
+=
+
+Bom material para aprender do zero a 99%
+
+<http://htmldog.com>
 
 
 HTML5
@@ -139,12 +144,17 @@ HTML5
 
 * Mais...
 
+
 HTML5 Novas Tags
 =
 
 What is the deal? Semantics!
 
 O que havia antes? Um monte de `<div id="blablabla">`
+
+
+HTML5 Novas Tags
+=
 
 Alguns exemplos:
 
@@ -165,7 +175,8 @@ Alguns exemplos:
 Estrutura HTML5
 =
 
-**TODO:** Colocar imagem html5 structure
+![Estrutura HTML5](https://raw.github.com/matehackers/web-ruby/master/ruby-web/assets/images/html5_structure.png "Estrutura HTML5")
+
 
 CSS
 =
@@ -177,15 +188,12 @@ CSS
 =
 
 Separe do HTML movendo para um arquivo separado
+
 * Melhor organizado
 
 * Facil manutenção
 
 * Permite browser fazer cache
-
-    <head>
-    <link rel="stylesheet" href="style.css">
-    </head>
 
 CSS Anatomia
 =
@@ -207,6 +215,7 @@ CSS Valores
 =
 
 Absolutos: px
+
 Relativos: %: relativo ao contexto, em: relativo ao valor atual de font-size   
 
 CSS Herança
