@@ -257,6 +257,8 @@ Aqui as coisas começam a complicar
 
 > Propriedades relacionadas a textos herdam (color, font, ...), propriedades relacionadas a layout não herdam (border, background, ...).
 
+![Herança CSS](https://raw.github.com/matehackers/web-ruby/master/ruby-web/assets/images/inheritance.jpg "herança em css")
+
 CSS
 =
 
