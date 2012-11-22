@@ -14,20 +14,47 @@ What is Web?
 
 </div>
 
+O que diferencia um aplicativo desktop de um aplicativo web?
+=
+
+  * Interação
+  * Tempo de resposta
+  * Acesso
+
 Frontend VS Backend
 =
 
-* Subjetivo
 
 Programadores, designers e administradores
 =
 
-* Notas filosóficas
-* Tecnologias envolvidas
+## Desenvolvimento Web é o termo mais genérico de todos!
 
+Programadores, designers e administradores
+=
+
+## Operações?
+  * Servidores: apache, nginx, lighttpd, mongrel, ...
+  * Bancos-de-dados: mysql, postgresql, oracle, ...
+  * Deployment: git, svn, ftp, daemons
+
+##  Aplicação?
+  * PHP, Ruby, Python, ASP, ...
+
+Programadores, designers e administradores
+=
+
+## Interação e Design?
+  * HTML, CSS, Javascript
+  * Imagens, Cores, Disposição de Elementos
 
 Backend: O que é um servidor Web?
 =
+
+## Depende...
+
+* Um software?
+* Um computador (parrudo)?
 
 HTTP
 =
