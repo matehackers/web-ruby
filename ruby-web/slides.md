@@ -4,17 +4,24 @@
 Jabá e Matehackers
 =
 
+\centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
+
+## **Hackers + Espaço = Hackerspace**
+
+http://matehackers.org
 
 What is Web?
 =
 
-* Figura bala da browser, nuvem e server
+* Uma nuvenzinha (não confundir com cloud computing)
 
-<div class="notes">
+\begin{figure}
+\centerline{\includegraphics[height=2in]{assets/images/web.png}}
+ \caption{Arquiterura da Web. Retirado de udacity.com} 
+\end{figure}
 
-</div>
 
-O que diferencia um aplicativo desktop de um aplicativo web?
+O que diferencia um app desktop de um app web?
 =
 
   * Interação
@@ -28,7 +35,7 @@ Frontend VS Backend
 Programadores, designers e administradores
 =
 
-## Desenvolvimento Web é o termo mais genérico de todos!
+## **Desenvolvimento Web é o termo mais genérico de todos!**
 
 Programadores, designers e administradores
 =
@@ -36,28 +43,53 @@ Programadores, designers e administradores
 ## Operações?
   * Servidores: apache, nginx, lighttpd, mongrel, ...
   * Bancos-de-dados: mysql, postgresql, oracle, ...
-  * Deployment: git, svn, ftp, daemons
-
-##  Aplicação?
-  * PHP, Ruby, Python, ASP, ...
+  * Deployment: git, svn, ftp, capistrano, ...
+  * Monitoramento: daemons, cronjobs, monit, ...
 
 Programadores, designers e administradores
 =
 
+##  Aplicação?
+  * PHP, Ruby, Python, ASP, ...
+  * Web services, autenticação, criptografia, algoritmos ...
+
 ## Interação e Design?
   * HTML, CSS, Javascript
-  * Imagens, Cores, Disposição de Elementos
+  * Imagens, Cores, disposição de elementos
+
+Programadores, designers e administradores
+=
+
+### Onde você quer trabalhar?
 
 Backend: O que é um servidor Web?
 =
 
-## Depende...
 
-* Um software?
-* Um computador (parrudo)?
+#### Um software...
+
+Que recebe requisições de diversos **clientes** e **serve** conteúdo para estes.
+
+#### Um computador...
+
+Parrudo onde roda um software servidor
+
+Backend: O que é um servidor Web?
+=
+
+Características de diferentes servidores
 
 HTTP
 =
+
+#### HTTP É a Web
+
+* Protocolo usado para comunicar os clientes com os servidores
+* Uso de verbos e recursos
+
+    GET /recurso HTTP/1.1
+
+
 
 Dinâmico e Estático
 =
@@ -303,6 +335,8 @@ Biblioteca JavaScript para facilitar:
 
 <http://jquery.com/>
 
+<http://www.codeschool.com/courses/jquery-air-first-flight>
+
 Tutoriais JS
 =
 
@@ -321,19 +355,37 @@ Conteúdo Din, Estat
 Linguagens de Programação
 =
 
-Arquitetura do processo
+O caminho de uma requisição Web
 =
 
-* LAMP, OSDL
+## O que acontece quando acessamos http://meusite.com/segredo.html usando nosso browser?
 
-Rails, Ruby, Sinatra...
+O caminho de uma requisição Web
+=
+
+* Mensagem no protocolo HTTP para 1.2.3.4 na porta 80
+* Requisição DNS para o IP de meusite.com (digamos que seja 1.2.3.4)
+* A request HTTP é essa:
+
+    GET meusite.com HTTP/1.1
+
+O caminho de uma requisição Web
+=
+
+* Mensagem é recebida pelo servidor
+* Servidor extrai o significado
+
+Ruby e Rails
 =
 
 * tryruby
 * RailsForZombies
 
-Dissecar os requests
+Dissecando nossos requests
 =
+
+## Qual o caminho de um request dentro do Rails?
+* Sistema de rotas
 
 Onde ficam os arquivos
 =
@@ -379,5 +431,12 @@ Próximos Passos
 Perguntas
 =
 
-Jabá Matehackers
+
+Jabá e Matehackers
 =
+
+\centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
+
+## **Hackers + Espaço = Hackerspace**
+
+http://matehackers.org
