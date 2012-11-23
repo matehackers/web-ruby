@@ -48,7 +48,7 @@ Programadores, designers e administradores
 
 **Deployment**: git, svn, ftp, capistrano, ...
 
-**Monitoramento**: daemons, cronjobs, monit, ...
+**Monitoramento**: daemons, cronjobs, monit, nagios, ...
 
 Programadores, designers e administradores
 =
@@ -84,10 +84,62 @@ HTTP
 
 * Protocolo usado para comunicar os clientes com os servidores
 * Uso de verbos e recursos
+* Verbos mais usados são GET e POST
 
-    GET /recurso HTTP/1.1
+HTTP
+=
+#### Exemplo
 
 
+    GET          /foo           HTTP/1.1
+    Verbo        Recurso        Versão
+    Method       Path
+
+HTTP
+=
+
+#### Exemplo
+
+    POST     /foo?name=bar      HTTP/1.1
+    Verbo    Recurso            Versão
+    Method       Path
+
+Respostas HTTP
+=
+
+* O servidor te envia: a versão de HTTP usada, um código de erro e um documento
+* O documento __geralmente__ será um arquivo HTML, mas o cliente pode interpretar de várias maneiras ...
+
+
+Headers HTTP
+=
+
+* Além das informações citadas acima informações, cada mensagem HTTP leva junto 'headers'
+* Headers são apenas linhas de texto num formato 'chave: valor'
+* Alguns são muito úteis como o `Content-Type`
+
+Headers HTTP
+=
+
+#### Uma visita a http://matehackers.org
+
+    GET / HTTP/1.1
+    User-Agent: curl/7.22.0 (i686-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+    Host: matehackers.org
+    Accept: */*
+
+Headers HTTP
+=
+
+#### Resposta de http://matehackers.org
+
+    HTTP/1.1 302 Found
+    Date: Fri, 23 Nov 2012 02:34:07 GMT
+    Server: Apache
+    X-Powered-By: PHP/5.4.8
+    Location: doku.php
+    Content-Length: 0
+    Content-Type: text/html
 
 Conteúdo Estático e Dinâmico
 =
@@ -95,7 +147,7 @@ Conteúdo Estático e Dinâmico
 * Servidores podem enviar arquivos já prontos...
   * HTML, vídeos, músicas, ...
 
-* ...ou construí-los dinamicamente
+* Ou construí-los dinamicamente
   * Perfis Facebook e Twitter, RSS, ...
 
 Conteúdo Dinâmico
@@ -104,7 +156,6 @@ Conteúdo Dinâmico
 * Abordagem como aplicativos tradicionais
 * As entradas são as mensagens HTTP
 * As saídas são arquivos baixados pelo cliente
-
 
 Tríplice Frontend
 =
@@ -213,7 +264,7 @@ Alguns exemplos:
 Estrutura HTML5
 =
 
-![Estrutura HTML5](https://raw.github.com/matehackers/web-ruby/master/ruby-web/assets/images/html5_structure.png "Estrutura HTML5")
+![Estrutura HTML5](assets/images/html5_structure.png "Estrutura HTML5")
 
 
 CSS
@@ -263,7 +314,7 @@ Aqui as coisas começam a complicar
 
 > Propriedades relacionadas a textos herdam (color, font, ...), propriedades relacionadas a layout não herdam (border, background, ...).
 
-![Herança CSS](https://raw.github.com/matehackers/web-ruby/master/ruby-web/assets/images/inheritance.jpg "herança em css")
+![Herança CSS](assets/images/inheritance.jpg "herança em css")
 
 CSS
 =
