@@ -41,30 +41,32 @@ Programadores, designers e administradores
 =
 
 ## Operações?
-  * Servidores: apache, nginx, lighttpd, mongrel, ...
-  * Bancos-de-dados: mysql, postgresql, oracle, ...
-  * Deployment: git, svn, ftp, capistrano, ...
-  * Monitoramento: daemons, cronjobs, monit, ...
+
+**Servidores**: apache, nginx, lighttpd, mongrel, ...
+
+**Bancos-de-dados**: mysql, postgresql, oracle, ...
+
+**Deployment**: git, svn, ftp, capistrano, ...
+
+**Monitoramento**: daemons, cronjobs, monit, ...
 
 Programadores, designers e administradores
 =
 
 ##  Aplicação?
-  * PHP, Ruby, Python, ASP, ...
-  * Web services, autenticação, criptografia, algoritmos ...
+
+PHP, Ruby, Python, ASP, ...
+
+Web services, autenticação, criptografia, algoritmos ...
 
 ## Interação e Design?
-  * HTML, CSS, Javascript
-  * Imagens, Cores, disposição de elementos
 
-Programadores, designers e administradores
-=
+HTML, CSS, Javascript
 
-### Onde você quer trabalhar?
+Imagens, Cores, disposição de elementos
 
 Backend: O que é um servidor Web?
 =
-
 
 #### Um software...
 
@@ -74,10 +76,6 @@ Que recebe requisições de diversos **clientes** e **serve** conteúdo para est
 
 Parrudo onde roda um software servidor
 
-Backend: O que é um servidor Web?
-=
-
-Características de diferentes servidores
 
 HTTP
 =
@@ -91,24 +89,33 @@ HTTP
 
 
 
-Dinâmico e Estático
+Conteúdo Estático e Dinâmico
 =
 
-* Arquivos estáticos
-* Abordagem como aplicativos
-* Problemas, caching
-* Endereços como parâmetros
+* Servidores podem enviar arquivos já prontos...
+  * HTML, vídeos, músicas, ...
+
+* ...ou construí-los dinamicamente
+  * Perfis Facebook e Twitter, RSS, ...
+
+Conteúdo Dinâmico
+=
+
+* Abordagem como aplicativos tradicionais
+* As entradas são as mensagens HTTP
+* As saídas são arquivos baixados pelo cliente
+
 
 Tríplice Frontend
 =
 
 Frontend é basicamente a interface
 
-* HTML == Estrutura
+* HTML é a Estrutura
 
-* CSS == Aparência
+* CSS é a Aparência
 
-* JS = Comportamento
+* JS é o Comportamento
 
 HTML
 =
@@ -349,7 +356,7 @@ Linguagens de Programação
 O caminho de uma requisição Web
 =
 
-## O que acontece quando acessamos http://meusite.com/segredo.html usando nosso browser?
+* O que acontece quando acessamos http://meusite.com/segredo.html usando nosso browser?
 
 O caminho de uma requisição Web
 =
