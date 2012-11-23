@@ -1,7 +1,7 @@
 % Programação Web com Ruby
 % Lucas Fialho Zawacki e Guilherme Krüger Araújo
 
-Jabá e Matehackers
+Jabá Matehackers
 =
 
 \centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
@@ -70,12 +70,11 @@ Backend: O que é um servidor Web?
 
 #### Um software...
 
-Que recebe requisições de diversos **clientes** e **serve** conteúdo para estes.
+Que recebe requisições de diversos **clientes** e **serve** conteúdo para estes. Geralmente multithreaded, preparado para servir diversos arquivos estáticos e com suporte a rodar linguagens "internamente".
 
 #### Um computador...
 
 Parrudo onde roda um software servidor
-
 
 HTTP
 =
@@ -102,7 +101,7 @@ HTTP
 
     POST     /foo?name=bar      HTTP/1.1
     Verbo    Recurso            Versão
-    Method       Path
+    Method   Path
 
 Respostas HTTP
 =
@@ -110,6 +109,23 @@ Respostas HTTP
 * O servidor te envia: a versão de HTTP usada, um código de erro e um documento
 * O documento __geralmente__ será um arquivo HTML, mas o cliente pode interpretar de várias maneiras ...
 
+Respostas HTTP
+=
+
+## Status comuns
+
+**200**: Ok
+**302**: Found
+**404**: Not Found
+**500**: Server error
+
+Respostas HTTP
+=
+
+\begin{figure}
+\centerline{\includegraphics[height=1.5in]{assets/images/http.jpg}}
+\caption{Códigos de Erro HTTP}
+\end{figure}
 
 Headers HTTP
 =
@@ -123,6 +139,7 @@ Headers HTTP
 
 #### Uma visita a http://matehackers.org
 
+    Contando-se a matehackers.org na porta 80
     GET / HTTP/1.1
     User-Agent: curl/7.22.0 (i686-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
     Host: matehackers.org
@@ -171,22 +188,24 @@ Frontend é basicamente a interface
 HTML
 =
 
-HTML define conteúdo e estrutura.
-
-Não é uma linguagem de programação.
-
-É uma linguagem de marcação (markup).
+HTML Playground
 
 HTML
 =
 
-Escreva HTML antes -> pense na estrutura dos dados.
+* HTML define **conteúdo** e **estrutura**.
+* Não é uma linguagem de programação.
+* É uma linguagem de marcação (markup).
 
-Só depois comece a pensar na apresentação.
+HTML
+=
+
+* Escreva HTML antes -> pense na estrutura dos dados.
+* Só depois comece a pensar na apresentação.
 
 Ex.: headers, use `<h1>`, `<h2>`, `<h3>`, ..., sem se preocupar com o tamanho da fonte, mas sim com seu significado (seções e subseções).
 
-A aparência pode ser mudada depois com CSS.
+* A aparência pode ser mudada depois com CSS.
 
 HTML
 =
@@ -264,8 +283,10 @@ Alguns exemplos:
 Estrutura HTML5
 =
 
-![Estrutura HTML5](assets/images/html5_structure.png "Estrutura HTML5")
-
+\begin{figure}
+\centerline{\includegraphics[height=2in]{assets/images/html5_structure.png}}
+ \caption{Estrutura HTML5} 
+\end{figure}
 
 CSS
 =
@@ -314,7 +335,10 @@ Aqui as coisas começam a complicar
 
 > Propriedades relacionadas a textos herdam (color, font, ...), propriedades relacionadas a layout não herdam (border, background, ...).
 
-![Herança CSS](assets/images/inheritance.jpg "herança em css")
+\begin{figure}
+\centerline{\includegraphics[height=1.5in]{assets/images/inheritance.jpg}}
+ \caption{Herança em CSS} 
+\end{figure}
 
 CSS
 =
@@ -407,53 +431,69 @@ Tutoriais JS
 
 <https://developer.mozilla.org/en-US/docs/JavaScript/Guide>
 
-
-Conteúdo Din, Estat
+O caminho de uma requisição Web
 =
 
-Linguagens de Programação
-=
+* O que acontece quando acessamos http://meusite.com/segredo?nome=lucas usando nosso browser?
 
 O caminho de uma requisição Web
 =
 
-* O que acontece quando acessamos http://meusite.com/segredo.html usando nosso browser?
-
-O caminho de uma requisição Web
-=
-
-* Mensagem no protocolo HTTP para 1.2.3.4 na porta 80
-* Requisição DNS para o IP de meusite.com (digamos que seja 1.2.3.4)
 * A request HTTP é essa:
 
-    GET meusite.com HTTP/1.1
+    Conectando-se a meusite.com
+    GET  /segredo?nome=lucas HTTP/1.1
 
 O caminho de uma requisição Web
 =
 
 * Mensagem é recebida pelo servidor
-* Servidor extrai o significado
+* Servidor extrai o significado de /segredo?nome=lucas
+* Servidor gera um documento em resposta
+
+O caminho de uma requisição Web
+=
+
+### Estático
+
+Retorna um arquivo pré-pronto (talvez segredo.html)
+
+### Dinâmico
+
+Retorna uma página gerada dinamicamente baseado no "parâmetro" `segredo?nome=lucas`. Pode rodar um programa ou script, consultar bancos-de-dados e/ou alguns serviços externos, etc...
 
 Ruby e Rails
 =
 
-* tryruby
-* RailsForZombies
+Experimentem <http://www.codeschool.com/courses/try-ruby>
 
-Dissecando nossos requests
+Ruby
 =
 
-## Qual o caminho de um request dentro do Rails?
-* Sistema de rotas
+* Linguagem de script com um foco em Orientação a Objetos
+* Segundo o criador, uma cruza de Perl/Python/Smalltalk
+* Vários interpretadores, comunidade bem ativa, bastantes bibliotecas
 
-Onde ficam os arquivos
+Rails
 =
+
+* Ruby
+* Model View Controller
+* Convention Over Configuration
+* Object Relational Mapping
+* Test Driven Development incluído
 
 Model View Controller
 =
 
+* É um **Design Pattern**: facilita nossa vida ao nos obrigar a seguir algumas regras
+* Separação da lógica do aplicativo (`models`) da apresentação (`view`)
+* Models e Views são totalmente desacoplados pois o Controller serve de intermediário
+
 Models
 =
+
+* São classes Ruby, derivadas de 
 
 Views
 =
@@ -466,10 +506,37 @@ Controllers
 * Passagem de dados para as views
 * Texto
 
+Qual o caminho de um request a um aplicatidentro do Rails?
+=
+
+### Sistema de rotas (`config/routes.rb`)
+
+Extrai informações do verbo + recurso da mensagem HTTP e mapeia para um `controller`e uma ação.
+
+### Controllers
+
+Consulta o banco-de-dados, roda lógica nos **`models`** e preenche variáveis para serem usadas pelos **`views`**
+
+Onde ficam os arquivos
+=
+
+## Configurações
+    config/routes.rb
+    config/initialize.rb
+    config/application.rb
+
+## MVC
+
+    app/models/foo.rb
+    app/controllers/foo_controller.rb
+    app/views/foo/index.html.erb
+
+## Banco de Dados
+
 Ruby Magic
 =
 
-* Protótipo
+* Análise do Protótipo
 * Rodar comandos e fazer paralelos
 * Mão na massa
 
@@ -477,6 +544,7 @@ Aprimorar
 =
 
 * Likes
+* Lógica no model
 
 Gemfile
 =
@@ -487,11 +555,15 @@ Gemfile
 Próximos Passos
 =
 
+* RVM
+* Testes
+* Deployment
+
 Perguntas
 =
 
 
-Jabá e Matehackers
+Jabá Matehackers
 =
 
 \centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
