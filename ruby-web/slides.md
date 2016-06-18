@@ -1,10 +1,12 @@
 % Programação Web com Ruby
-% Lucas Fialho Zawacki e Guilherme Krüger Araujo
+% Lucas Fialho Zawacki
+% Guilherme Krüger Araujo
 
 Jabá Matehackers
 =
 
 \centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
+![](assets/images/logo.png)
 
 ## **Hackers + Espaço = Hackerspace**
 
@@ -17,8 +19,9 @@ What is Web?
 
 \begin{figure}
 \centerline{\includegraphics[height=2in]{assets/images/web.png}}
- \caption{Arquiterura da Web. Retirado de udacity.com} 
+ \caption{Arquiterura da Web. Retirado de udacity.com}
 \end{figure}
+![Arquiterura da Web. Retirado de udacity.com](assets/images/web.png)
 
 O que diferencia um app desktop de um app web?
 =
@@ -41,7 +44,7 @@ Programadores, designers e administradores
 
 **Bancos-de-dados**: mysql, postgresql, oracle, ...
 
-**Deployment**: git, svn, ftp, capistrano, ...
+**Versionamento e Deployment**: git, svn, ftp, capistrano, ...
 
 **Monitoramento**: daemons, cronjobs, monit, nagios, ...
 
@@ -137,6 +140,7 @@ Respostas HTTP
 \centerline{\includegraphics[height=2in]{assets/images/http.jpg}}
 \caption{Códigos de Erro HTTP}
 \end{figure}
+![Códigos de Erro HTTP](assets/images/http.jpg)
 
 Headers HTTP
 =
@@ -168,11 +172,6 @@ Headers HTTP
     Location: doku.php
     Content-Length: 0
     Content-Type: text/html
-
-Headers HTTP
-=
-
-Testem vocês <http://matehackers.org:4567/>
 
 Conteúdo Estático e Dinâmico
 =
@@ -259,45 +258,6 @@ Fácil manutenção (Fácil de entender e alterar)
 
 Menor latência (cache de arquivos css e js)
 
-HTML5
-=
-
-* Novas Tags (Semânticas)
-* Canvas
-* Media
-* Mais...
-
-
-HTML5 Novas Tags
-=
-
-## What is the deal? Semantics!
-
-O que havia antes? Um monte de `<div id="blablabla">`
-
-HTML5 Novas Tags
-=
-
-* `<header>` grupo auxiliar introdutorio, podendo ser reutilizado dentro de outras tags;
-* `<nav>` seção da página com links para outras páginas do site ou seções na mesma página;
-* `<section>` grupo de conteúdo relacionado a um tema;
-* `<article>` conteudo *independente* e *auto-contido*. Costuma ocorrer diversas vezes dentro de uma tag `<section>`;
-
-HTML5 Novas Tags
-=
-
-* `<aside>` conteudo relacionado a `<article>` mas não crucial ao seu entendimento;
-* `<footer>` inclui informação que finaliza uma `<section>`, pode ser utilizada diversas vezes dentro de uma página;
-* `<input>` possui diversos tipos, como email ou data. Muito importante para mostrar o melhor formato de entrada de dados (ex: slider, date picker, ...) e para dispositivos móveis abrirem o tipo de teclado mais apropriado;
-
-Estrutura HTML5
-=
-
-\begin{figure}
-\centerline{\includegraphics[height=2in]{assets/images/html5_structure.png}}
- \caption{Estrutura HTML5} 
-\end{figure}
-
 CSS
 =
 
@@ -348,8 +308,9 @@ Aqui as coisas começam a complicar
 
 \begin{figure}
 \centerline{\includegraphics[height=1.2in]{assets/images/inheritance.jpg}}
- \caption{Herança em CSS} 
+ \caption{Herança em CSS}
 \end{figure}
+![Herança em CSS](assets/images/inheritance.jpg)
 
 CSS
 =
@@ -365,7 +326,7 @@ CSS3
 
 ## Wooooaaaahh!
 
-<http://www.keithclark.co.uk/labs/3dcss/demo/>
+<http://www.keithclark.co.uk/labs/css-fps/desktop/>
 
 JavaScript (JS)
 =
@@ -409,7 +370,7 @@ JQuery
 
 ## Biblioteca JavaScript para facilitar:
 
-Percorer DOM
+Percorrer DOM
 
 Lidar com eventos
 
@@ -506,9 +467,6 @@ Extrai informações do verbo + recurso da mensagem HTTP e mapeia para um `contr
 
 Consulta o banco-de-dados, roda lógica nos **`models`** e preenche variáveis para serem usadas pelos **`views`**
 
-Application Stack
-=
-
 
 Onde ficam os arquivos
 =
@@ -539,14 +497,10 @@ Onde ficam os arquivos
 Protótipo
 =
 
-### Vamos lá!
-
-Rodando na porta 9001
-
 Próximos Passos
 =
 
-* RVM
+* rbenv
 * Testes
 * Deployment
 
@@ -559,6 +513,7 @@ Obrigado!
 =
 
 \centerline{\includegraphics[height=1.5in]{assets/images/logo.png}}
+![](assets/images/logo.png)
 
 ## **Hackers + Espaço = Hackerspace**
 
